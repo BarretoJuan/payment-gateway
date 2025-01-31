@@ -1,0 +1,12 @@
+@if (paymentDetails) {
+  <h2>Confirmar pago</h2>
+  <p><strong>Usuario ID:</strong> {{ paymentDetails.user_id }}</p>
+  <p><strong>Curso:</strong> {{ paymentDetails.course_name }}</p>
+  <p><strong>Monto:</strong> {{ paymentDetails.amount }} USD</p>
+  <p><strong>Fecha:</strong> {{ paymentDetails.payment_date }}</p>
+
+  <button>Pagar ahora</button>
+} @else if (errorMessage) {
+  <p class="error">{{ errorMessage }}</p>
+}
+
