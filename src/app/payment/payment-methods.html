@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment methods - Mockup</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Manrope:wght@200..800&family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet">
+  </head>
+
+  <body>
+    <nav>
+      <img src="logo.svg" alt="Logo de la universidad Rafael Belloso Chacin" class="logo">
+    </nav>
+
+    <section>
+      <span class="payment-info">
+        <h2>Solicitud de Pago</h2>
+        <h3>Monto: $49.99</h3>
+      </span>
+
+      <div class="payment-content">
+        <span class="separator"> </span>
+
+        <h3>
+          Seleccione el medio de pago
+        </h3>
+
+        <div class="payment-methods">
+          <span class="payment-method paypal-method">
+            <img src="./payment-methods/paypal.svg" alt="Paypal method ">
+          </span>
+          <span class=" payment-method zelle-method">
+            <img src="./payment-methods/zelle.svg" alt="Zelle method">
+          </span>
+        </div>
+      </div>
+    </section>
+
+  </body>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
+    }
+
+    body {
+      width: 100vw;
+      height: 100vh;
+      font-family: 'Geist', sans-serif;
+      background-color: #001E44;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    section {
+      justify-content: center;
+      background-color: #fff;
+      height: 500px;
+      width: 400px;
+      border-radius: 5px;
+      opacity: 0.82;
+      display: flex;
+      padding-top: 8%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .payment-info {
+      position: absolute;
+      top: 10%;
+      text-align: center;
+      margin-top: 20px;
+      color: #001E44;
+    }
+
+    .payment-content {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      gap: 5px;
+    }
+
+    .separator {
+      position: absolute;
+      top: -20px;
+      width: 75%;
+      height: 1px;
+      background-color: #001E44;
+    }
+
+    .payment-methods {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+    }
+
+    .payment-method {
+      width: 250px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+    }
+
+    .paypal-method {
+      background-color: #FFC43A;
+      cursor: pointer;
+      transition: all 500ms; 
+    } 
+    .paypal-method:hover {
+      background-color: #FFA500;
+    }
+    .paypal-method img {
+      width: 100px;
+    }
+
+    .zelle-method {
+      background-color: #6D2BD3;
+      cursor: pointer;
+      transition: all 500ms; 
+    }
+    .zelle-method:hover {
+      background-color: #4A1A7D;
+    }
+    .zelle-method img {
+      width: 50px;
+    }
+
+    .logo {
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+
+  </style>
+
+</html>

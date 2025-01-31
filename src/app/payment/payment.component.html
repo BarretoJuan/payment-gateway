@@ -1,4 +1,4 @@
-@if (paymentDetails) {
+<!-- @if (paymentDetails) {
   <h2>Confirmar pago</h2>
   <p><strong>Usuario ID:</strong> {{ paymentDetails.user_id }}</p>
   <p><strong>Curso:</strong> {{ paymentDetails.course_name }}</p>
@@ -9,4 +9,34 @@
 } @else if (errorMessage) {
   <p class="error">{{ errorMessage }}</p>
 }
+ -->
 
+
+ <main class="payment-container">
+  <img src="/urbe-logo-with-bg.svg" alt="URBE LOGO"  class="logo">
+
+  <section>
+    <span class="payment-info">
+      <h2>Solicitud de Pago</h2>
+      <h3>Monto: ${{paymentDetails?.amount}}</h3>
+    </span>
+
+    <div class="payment-content">
+      <span class="separator"> </span>
+
+      <h3>
+        Seleccione el medio de pago
+      </h3>
+
+      <div class="payment-methods">
+        <span class="payment-method paypal-method">
+          <img src="/paypal.svg" alt="Paypal method ">
+        </span>
+        <span class=" payment-method zelle-method">
+          <img src="/zelle.svg" alt="Zelle method">
+        </span>
+      </div>
+    </div>
+  </section>
+
+</main>

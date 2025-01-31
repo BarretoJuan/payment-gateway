@@ -1,6 +1,6 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { PaymentService } from '../payment.service';
+import { PaymentService } from './payment.service';
 import { CommonModule } from '@angular/common';
 
 
